@@ -18,7 +18,7 @@ def choix_cuisson(teme):
 
 
 cuisson = [
-    ("Oeufs à la coque", 2),
+    ("Oeufs à la coque", 3),
     ("Oeufs mollets", 6),
     ("Oeufs durs", 9),
 ]
