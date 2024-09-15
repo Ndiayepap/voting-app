@@ -85,15 +85,14 @@ def choix_cuisson(teme):
     return cle, valeur
 
 
-nomb = 60
-
 cuisson = [
-    ("- Oeufs à la coque", 3),
+    ("- Oeufs à la coque", 2),
     ("- Oeufs mollets", 6),
     ("- Oeufs durs", 9),
 ]
 
-# Ce programme de type "minuteur" qui permettra d'afficher en temps réel le temps restant de cuisson.
+# Affichage du menu
+print("Cuisson de œufs")
 index = 0
 for c in (cuisson):
     print(index+1, c[0], ":", c[1], "mn")
@@ -103,22 +102,26 @@ for c in (cuisson):
 cle, val = choix_cuisson(cuisson)
 print(cle, val, "mn")
 
-duree = val*nomb
-min = duree//60 # 3x60
-sec = duree-min*60
+duree = val*60
 
-
-#print(duree, min, sec)
-while val > 0:
-    for i in range (val):
-        print("temps restant",min, ":",sec)
-        for o in range (10):
-            print(".", end="", flush=True)
-            time.sleep(1)
-        min -= 1
-
-        val -=1
+# Ce programme de type "minuteur" vous permettra d'afficher en temps réel le temps restant de cuisson.
+print("cuisson en cours", end="", flush=True)
+while True:
+    for i in range(10):
+        time.sleep(1)
+        print(".", end="", flush=True)
     
+    duree -= 10
+    min = duree//60 
+    if duree == 0:
+        print("")
+        print("Cuisson terminée !")
+        break
+
+    print("")
+    print("temps restant",str(min).zfill(2) + ":" + str(duree-min*60).zfill(2), end="", flush=True)
+    
+
 
 
 
