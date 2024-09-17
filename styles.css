@@ -1,0 +1,155 @@
+
+html { 
+    background: url(chauffeur_VTC_1.jpg) no-repeat center center fixed ; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    backdrop-filter: 40%;
+}
+
+body {
+    padding-top: 30px;
+    background-color: rgb(205, 217, 245);
+    max-width: 775px;
+    margin: 30px auto 0;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    font-size: 18px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.h1 {
+    display: inline-block;
+    padding: 25px;
+    margin: 20px 10px;
+    border: 1px solid;
+    text-decoration: none;
+
+    appearance: none;
+    background-color: #FFFFFF;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #ADCFFF 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.h1:hover {
+    background-color: #FFC229;
+    box-shadow: #FF6314 0 -6px 8px inset;
+    transform: scale(1.125);
+}
+
+.h1:active {
+    transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .h1 {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+}
+
+.tel {
+    margin-bottom: 30px;
+}
+
+.tel a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.tel a:hover {
+    color: rgb(213, 31, 198);
+}
+
+.image {
+    border-radius: 12px;
+    margin: 0 auto;
+    width: 95%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border: 1px solid;
+}
+
+.h2 {
+    padding: 20px 30px 0 30px;
+    color: rgb(169, 8, 8);
+    text-decoration: underline;
+}
+
+.descript {
+    padding: 0px 20px 30px 20px;
+    color: rgb(27, 27, 28);
+}
+
+.voiture {
+    width: 95%;
+    border-radius: 12px;
+}
+
+.voiture:hover {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.texte {
+    width: 95%;
+    margin-left: 10px;
+}
+
+.devis {
+    text-decoration: none;
+    color: blue;
+}
+
+.devis:hover {
+    color:rgb(169, 8, 8);
+    text-decoration: underline;
+}
+
+h3 {
+    text-decoration: underline;
+    color: rgb(169, 8, 8);
+}
+
+.fraim {
+    padding: 90px 90px 20px 90px;
+    margin-top: 40px;
+    text-decoration: none;
+    color: beige;
+    background-color: black;
+}
+
+.fraim a {
+    text-decoration: none;
+    color: aqua;
+}
+
+.fraim a:hover {
+    color: rgb(250, 10, 10);
+    text-decoration: underline;
+}
+
+/* @media (min-width: 768px) {
+    .voiture {
+        width: 100%;
+        border-radius: 12px;
+    }
+} */
